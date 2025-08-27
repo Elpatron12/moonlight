@@ -400,8 +400,12 @@ function setEditorContent(content) {
     }
 }
 
+// Export functions to global window object for C# access
+window.getEditorContent = getEditorContent;
+window.setEditorContent = setEditorContent;
+window.getDefaultScript = getDefaultScript;
+
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     initializeMonaco();
 });
-
