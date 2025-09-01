@@ -210,35 +210,22 @@ body {
     background: #191919 !important;
 }
 
-/* Additional Monaco minimap selectors */
-.monaco-editor .minimap-decorations-layer {
+/* Keep only minimap background, not text elements */
+.monaco-editor .minimap {
     background: #191919 !important;
 }
 
-.monaco-editor .minimap-char-renderer {
+/* Minimap scrollbar styling */
+.monaco-editor .minimap .monaco-scrollable-element > .scrollbar > .slider {
+    background: #424242 !important;
+}
+
+.monaco-editor .minimap .monaco-scrollable-element > .scrollbar > .slider:hover {
+    background: #4f4f4f !important;
+}
+
+.monaco-editor .minimap .monaco-scrollable-element > .scrollbar {
     background: #191919 !important;
-}
-
-.monaco-editor .minimap-glyph-margin {
-    background: #191919 !important;
-}
-
-/* Force all minimap canvas backgrounds */
-.monaco-editor .minimap canvas {
-    background: #191919 !important;
-}
-
-.monaco-editor .minimap-slider canvas {
-    background: #191919 !important;
-}
-
-/* Override any remaining black backgrounds in minimap */
-.monaco-editor .minimap * {
-    background-color: #191919 !important;
-}
-
-.monaco-editor .minimap-slider * {
-    background-color: #191919 !important;
 }
 
 /* Scrollbars */
