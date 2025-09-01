@@ -186,12 +186,59 @@ body {
     background: #191919 !important;
 }
 
+.monaco-editor .minimap .minimap-shadow-hidden {
+    background: #191919 !important;
+}
+
+.monaco-editor .minimap .minimap-shadow-visible {
+    background: #191919 !important;
+}
+
+.monaco-editor .minimap-slider .minimap-slider-horizontal {
+    background: #191919 !important;
+}
+
+.monaco-editor .minimap-slider .minimap-slider-vertical {
+    background: #191919 !important;
+}
+
 .monaco-editor .decorationsOverviewRuler {
     background: #191919 !important;
 }
 
 .monaco-editor .scroll-decoration {
     background: #191919 !important;
+}
+
+/* Additional Monaco minimap selectors */
+.monaco-editor .minimap-decorations-layer {
+    background: #191919 !important;
+}
+
+.monaco-editor .minimap-char-renderer {
+    background: #191919 !important;
+}
+
+.monaco-editor .minimap-glyph-margin {
+    background: #191919 !important;
+}
+
+/* Force all minimap canvas backgrounds */
+.monaco-editor .minimap canvas {
+    background: #191919 !important;
+}
+
+.monaco-editor .minimap-slider canvas {
+    background: #191919 !important;
+}
+
+/* Override any remaining black backgrounds in minimap */
+.monaco-editor .minimap * {
+    background-color: #191919 !important;
+}
+
+.monaco-editor .minimap-slider * {
+    background-color: #191919 !important;
 }
 
 /* Scrollbars */
