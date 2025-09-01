@@ -177,6 +177,23 @@ body {
     background: #191919 !important;
 }
 
+/* Minimap and right panel */
+.monaco-editor .minimap {
+    background: #191919 !important;
+}
+
+.monaco-editor .minimap-slider {
+    background: #191919 !important;
+}
+
+.monaco-editor .decorationsOverviewRuler {
+    background: #191919 !important;
+}
+
+.monaco-editor .scroll-decoration {
+    background: #191919 !important;
+}
+
 /* Scrollbars */
 ::-webkit-scrollbar {
     width: 14px;
