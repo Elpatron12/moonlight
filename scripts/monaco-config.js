@@ -125,7 +125,7 @@ function initializeMonaco() {
             inherit: true,
             rules: [],
             colors: {
-                'editor.background': '#000000',
+                'editor.background': '#191919',
                 'editor.foreground': '#d4d4d4',
                 'editorLineNumber.foreground': '#858585',
                 'editorLineNumber.activeForeground': '#ffffff',
@@ -142,11 +142,11 @@ function initializeMonaco() {
                 'editor.hoverHighlightBackground': '#264f7840',
                 'editorHoverWidget.background': '#252526',
                 'editorHoverWidget.border': '#454545',
-                'minimap.background': '#000000',
+                'minimap.background': '#191919',
                 'minimapSlider.background': '#79797933',
                 'minimapSlider.hoverBackground': '#646464b3',
                 'minimapSlider.activeBackground': '#bfbfbf66',
-                'scrollbar.shadow': '#000000',
+                'scrollbar.shadow': '#191919',
                 'scrollbarSlider.background': '#79797966',
                 'scrollbarSlider.hoverBackground': '#646464b3',
                 'scrollbarSlider.activeBackground': '#bfbfbf66'
