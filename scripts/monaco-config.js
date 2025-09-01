@@ -381,10 +381,10 @@ function initializeMonaco() {
 
 // Default script content
 function getDefaultScript() {
-    return `-- ANON HUB Executor
+    return `-- ANON Executor
 -- Lua Script Editor
 
-print("ANON HUB loaded successfully!")
+print("ANON Executor loaded successfully!")
 
 -- Your scripts here...`;
 }
