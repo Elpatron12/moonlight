@@ -143,6 +143,7 @@ function initializeMonaco() {
                 'editorHoverWidget.background': '#252526',
                 'editorHoverWidget.border': '#454545',
                 'minimap.background': '#191919',
+                'minimap.foreground': '#d4d4d4',
                 'minimapSlider.background': '#79797933',
                 'minimapSlider.hoverBackground': '#646464b3',
                 'minimapSlider.activeBackground': '#bfbfbf66',
