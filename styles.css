@@ -1,0 +1,202 @@
+/* ANON HUB Monaco Editor - Simple Tab Design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #191919;
+    color: #d4d4d4;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.editor-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #191919;
+}
+
+/* Tab Bar */
+.tab-bar {
+    display: flex;
+    background: #191919;
+    border-bottom: 1px solid #3e3e42;
+    height: 35px;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    flex: 1;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #555555 #191919;
+}
+
+.tabs::-webkit-scrollbar {
+    height: 8px;
+}
+
+.tabs::-webkit-scrollbar-track {
+    background: #191919;
+}
+
+.tabs::-webkit-scrollbar-thumb {
+    background: #555555;
+    border-radius: 4px;
+}
+
+.tabs::-webkit-scrollbar-thumb:hover {
+    background: #666666;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    background: #191919;
+    border-right: 1px solid #3e3e42;
+    padding: 0 12px;
+    height: 35px;
+    cursor: pointer;
+    min-width: 120px;
+    max-width: 200px;
+    transition: background-color 0.2s ease;
+    user-select: none;
+}
+
+.tab:hover {
+    background: #37373d;
+}
+
+.tab.active {
+    background: #191919;
+    border-bottom: 2px solid #ff0000;
+}
+
+.tab-name {
+    flex: 1;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #cccccc;
+}
+
+.tab.active .tab-name {
+    color: #ffffff;
+}
+
+.tab-close {
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    font-size: 12px;
+    opacity: 0.6;
+    transition: all 0.2s ease;
+}
+
+.tab-close:hover {
+    background: #e81123;
+    color: white;
+    opacity: 1;
+}
+
+.tab-controls {
+    display: flex;
+    padding: 0 8px;
+    gap: 4px;
+}
+
+.new-tab-plus {
+    background: #191919;
+    color: #cccccc;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.new-tab-plus:hover {
+    background: #37373d;
+    color: #ffffff;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    color: #cccccc;
+    padding: 4px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.tab-btn:hover {
+    background: #37373d;
+    color: #ffffff;
+}
+
+/* Editor */
+.editor-wrapper {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+#monaco-editor {
+    width: 100%;
+    height: 100%;
+}
+
+/* Monaco Theme Overrides */
+.monaco-editor {
+    background: #191919 !important;
+}
+
+.monaco-editor .margin {
+    background: #191919 !important;
+}
+
+.monaco-editor .monaco-editor-background {
+    background: #191919 !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background: #191919;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #424242;
+    border-radius: 7px;
+    border: 3px solid #191919;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4f4f4f;
+}
+
+::-webkit-scrollbar-corner {
+    background: #191919;
+}

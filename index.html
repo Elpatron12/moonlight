@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANON HUB - Monaco Editor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
+</head>
+<body>
+    <div class="editor-container">
+        <!-- Tab Bar -->
+        <div class="tab-bar">
+            <div class="tabs" id="tabContainer">
+                <div class="tab active" data-file="script1.lua">
+                    <span class="tab-name">script1.lua</span>
+                    <span class="tab-close">×</span>
+                </div>
+            </div>
+            <div class="tab-controls">
+                <div class="new-tab-plus" onclick="createNewTab()" title="Neuer Tab (Ctrl+T)">+</div>
+            </div>
+        </div>
+
+        <!-- Monaco Editor -->
+        <div class="editor-wrapper">
+            <div id="monaco-editor"></div>
+        </div>
+    </div>
+
+    <script src="scripts/monaco-config.js"></script>
+    <script src="scripts/tab-manager.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
